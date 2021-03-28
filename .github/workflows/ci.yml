@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   test:
     name: Go ${{ matrix.go-version }} with Kafka ${{ matrix.kafka-version }} on Ubuntu
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
